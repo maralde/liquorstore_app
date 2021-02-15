@@ -1,0 +1,15 @@
+<odoo>
+    <!-- Liquorstore App Menu -->
+    <menuitem id="liquorstore_menu" name="Liquorstore" />
+    <!-- Action to open the Alcohol list -->
+	<act_window id="action_liquorstore_alcohol"
+		name="Liquorstore Alcohol"
+		res_model="liquorstore.alcohol"
+		view_mode="tree,form" />
+
+	<!-- Menu item to open the Alcohol list -->
+	<menuitem id="menu_liquorstore_alcohol"
+		name="Alcohol"
+		action="action_liquorstore_alcohol"
+		parent="liquorstore_menu" />
+</odoo>
