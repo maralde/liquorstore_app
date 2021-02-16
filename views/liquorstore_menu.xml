@@ -12,4 +12,19 @@
 		name="Alcohol"
 		action="action_liquorstore_alcohol"
 		parent="liquorstore_menu" />
+
+
+	<act_window id="action_liquorstore_categ"
+      name="Tipos"
+      res_model="liquorstore.alcohol.tipo"
+      view_mode="tree,form"
+    />
+
+	 <menuitem id="menu_liquorstore_categ"
+              name="Tipos"
+              action="action_liquorstore_categ"
+              parent="liquorstore_menu"
+    />
+
+
 </odoo>

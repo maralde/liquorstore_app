@@ -15,13 +15,14 @@
 		<group name="group_left">
 			<field name="name" />
             <field name="marca" />
+			<field name="descripcion"/>
 			<!--<field name="author_ids" widget="many2many_tags" />
 			<field name="publisher_id" />
 			<field name="date_published" />-->
 		</group>
 		<group name="group_right">
-			<field name="image" widget="image" />
-			<field name="active" />
+				<field name="image" widget="image" width="200" height="150"/>
+
 		</group>
     </group>
     </sheet>

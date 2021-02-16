@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+
+	<record model="liquorstore.alcohol" id="liquorstore_alcohol_cag1">
+		<field name="name">Captain Morgan</field>
+	</record>
+
+
+    <record model="liquorstore.alcohol" id="liquorstore_alcohol_cag2">
+		<field name="name">Red Star Er Guo</field>
+
+	</record>
+
+
+</odoo>
