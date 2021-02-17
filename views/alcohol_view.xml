@@ -13,7 +13,7 @@
 	<!-- Content goes here: -->
 	<group name="group_top">
 		<group name="group_left">
-			<field name="name" />
+			<field name="name"/>
             <field name="marca" />
 			<field name="descripcion"/>
 			<field name="tipos_id"/>
@@ -23,7 +23,7 @@
 			<field name="date_published" />-->
 		</group>
 		<group name="group_right">
-				<field name="image" widget="image" width="200" height="150"/>
+				<field name="image" widget="image" width="200" height="250"/>
 
 		</group>
     </group>
@@ -39,6 +39,7 @@
 	<tree>
 		<field name="name"/>
         <field name="marca"/>
+		<field name="image" widget="image" width="50" height="50"/>
 		<field name="precio"/>
 		<!--<field name="author_ids" widget="many2many_tags" />
 		<field name="publisher_id"/>
