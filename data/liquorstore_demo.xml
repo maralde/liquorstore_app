@@ -56,7 +56,7 @@
 		<field name="publisher_id" ref="res_partner_mt" />-->
 	</record>
 
-	<record model="liquorstore.alcohol" id="liquorstore_alcohol_esa2">
+	<record model="liquorstore.alcohol" id="liquorstore_alcohol_esa4">
 		<field name="name">Jägermeister</field>
         <field name="marca">Licor</field>
 		<field name="descripcion">Licor que tiene un 35 % de contenido alcohólico.
@@ -67,7 +67,7 @@
 		<field name="publisher_id" ref="res_partner_pp" />-->
 	</record>
 
-<record model="liquorstore.alcohol" id="liquorstore_alcohol_esa2">
+<record model="liquorstore.alcohol" id="liquorstore_alcohol_esa5">
 		<field name="name">Baileys</field>
         <field name="marca">Licor</field>
 		<field name="descripcion">Baileys fue el primer licor en combinar crema
@@ -81,7 +81,7 @@
 	</record>
 
 
-	<record model="liquorstore.alcohol" id="liquorstore_alcohol_esa2">
+	<record model="liquorstore.alcohol" id="liquorstore_alcohol_esa6">
 		<field name="name">Jack Daniels</field>
         <field name="marca">Whiskey</field>
 		<field name="descripcion">Filtrado en carbón de arce sacarino,
