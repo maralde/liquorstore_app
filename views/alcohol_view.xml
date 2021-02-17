@@ -18,6 +18,8 @@
 			<field name="descripcion"/>
 			<field name="tipos_id"/>
 			<field name="precio"/>
+
+
 			<!--<field name="author_ids" widget="many2many_tags" />
 			<field name="publisher_id" />
 			<field name="date_published" />-->
@@ -39,8 +41,9 @@
 	<tree>
 		<field name="name"/>
         <field name="marca"/>
-		<field name="image" widget="image" width="50" height="50"/>
 		<field name="precio"/>
+		<field name="image" widget="image" width="50" height="50"/>
+
 		<!--<field name="author_ids" widget="many2many_tags" />
 		<field name="publisher_id"/>
 		<field name="date_published"/>-->
