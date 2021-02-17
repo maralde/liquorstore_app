@@ -10,6 +10,7 @@ class Alcohol(models.Model):
     descripcion = fields.Char('Descripcion')
     image = fields.Binary('Image', help="../static/description/imgliquorstore.png")
     active = fields.Boolean('Active?', default=True)
+    precio = fields.Integer()
     # date_published = fields.Date()
     # publisher_id = fields.Many2one('res.partner', string='Publisher')
     # author_ids = fields.Many2many('res.partner', string='Authors')
