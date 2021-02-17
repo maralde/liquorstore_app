@@ -1,5 +1,5 @@
 from odoo import fields, models, api
-from odoo.exceptions import Warning
+from odoo.exceptions import Warning,ValidationError
 
 
 class Alcohol(models.Model):
@@ -10,15 +10,18 @@ class Alcohol(models.Model):
     descripcion = fields.Char('Descripcion')
     image = fields.Binary('Image', help="../static/description/imgliquorstore.png")
     active = fields.Boolean('Active?', default=True)
-    precio = fields.Integer()
+    precio = fields.Integer('Precio',required=True)
     # date_published = fields.Date()
     # publisher_id = fields.Many2one('res.partner', string='Publisher')
     # author_ids = fields.Many2many('res.partner', string='Authors')
     # name = fields.Char(translate=True, required=True)
 
     # Hierarchy fields
-    parent_id = fields.Many2one(
-        'liquorstore.alcohol.tipo',
-        'Parent Category',
-        ondelete='restrict')
+
     parent_path = fields.Char(index=True)
+
+    @api.constrains('precio')
+    def check_precioCorrecto(self):
+        for Alcohol in self:
+            if Alcohol.precio <= 0:
+                raise Warning('El precio tiene que ser mayor que cero')
