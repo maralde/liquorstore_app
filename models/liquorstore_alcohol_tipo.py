@@ -13,6 +13,11 @@ class AlcoholTipo(models.Model):
     parent_path = fields.Char(index=True)
 
     # Optional but good to have:
+    parent_id = fields.Many2one(
+        'liquorstore.alcohol.tipo',
+        'Parent Category',
+        ondelete='restrict')
+
     child_ids = fields.One2many(
         'liquorstore.alcohol.tipo',
         'parent_id',
@@ -20,5 +25,5 @@ class AlcoholTipo(models.Model):
 
     highlighted_id = fields.Reference(
         [('liquorstore.alcohol.tipo', 'Alcohol'), ('res.partner', 'Author')],
-        'Category Highlight',
+        'Category Highlight'
     )
