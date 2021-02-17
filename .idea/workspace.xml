@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7318f1a5-1c47-44b4-9356-52ae5c93cfe1" name="Default Changelist" comment="Actualizacion de alcohol_view.xml(agragado el precio)" />
+    <list default="true" id="7318f1a5-1c47-44b4-9356-52ae5c93cfe1" name="Default Changelist" comment="Actualizacion de alcohol_view.xml(agragado el precio)">
+      <change beforePath="$PROJECT_DIR$/views/alcohol_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/alcohol_view.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
