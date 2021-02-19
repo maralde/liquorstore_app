@@ -6,11 +6,11 @@ class Alcohol(models.Model):
     _name = 'liquorstore.alcohol'
     _description = 'Alcohol'
     name = fields.Char('Nombre', required=True)
-    marca = fields.Char('Marca')
+    marca = fields.Char('Marca', required=True)
     descripcion = fields.Char('Descripcion')
     image = fields.Binary('Image', help="../static/description/imgliquorstore.png")
     active = fields.Boolean('Active?', default=True)
-    precio = fields.Integer('Precio',required=True)
+    precio = fields.Integer('Precio', required=True)
     # date_published = fields.Date()
     # publisher_id = fields.Many2one('res.partner', string='Publisher')
     # author_ids = fields.Many2many('res.partner', string='Authors')
@@ -19,8 +19,7 @@ class Alcohol(models.Model):
     # Hierarchy fields
     tipos_id = fields.Many2one(
         'liquorstore.alcohol.tipo',
-        'Tipo',
-        ondelete='restrict')
+        'Tipo', ondelete='restrict')
     parent_path = fields.Char(index=True)
 
     @api.constrains('precio')
